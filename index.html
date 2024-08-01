@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 4px brown solid;
+            width: 600px;
+            height: 1200px;
+            background-color: white;
+            margin-left: 400px;
+        }
+
+        .sno {
+            position: relative;
+            left: 20px;
+            top: 40px;
+        }
+
+        .img1 {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 250px;
+            bottom: 40px;
+        }
+
+        .img2 {
+            width: 70px;
+            height: 70px;
+            position: relative;
+            left: 400px;
+            bottom: 50px;
+        }
+
+        .hicet {
+            width: 600px;
+            height: 150px;
+            position: relative;
+            bottom: 30px;
+        }
+
+        .title {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            position: relative;
+            bottom: 120px;
+            left: 60px;
+            width: 400px;
+            position: relative;
+            left: 150px;
+
+        }
+
+        .title1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 100;
+            position: relative;
+            bottom: 120px;
+            left: 50px;
+            width: 400px;
+            position: relative;
+            left: 220px;
+        }
+
+        .m {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+            left: 55px;
+            bottom: 120px;
+            font-size: 30px;
+        }
+
+        table {
+            width: 550px;
+            height: 50px;
+            border: 1px solid rgb(4, 4, 4);
+            position: relative;
+            bottom: 100px;
+            left: 25px;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid rgb(2, 2, 2);
+            height: 60px;
+            text-align: center;
+        }
+
+        tr {
+            width: 100%;
+            border: 0px solid rgb(11, 11, 11);
+        }
+
+        .c1 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .c2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .table2 {
+            position: relative;
+            bottom: 70px;
+        }
+
+        .heading {
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .totalmarks {
+            position: relative;
+            left: 65px;
+        }
+
+        .r1 {
+            position: relative;
+            left: 400px;
+            bottom: 50px;
+        }
+
+        .date {
+            position: relative;
+            left: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="sno">Sr.No. <span>00000000</span> </p>
+        <img class="img1" src="hicet.webp" alt="">
+        <img src="qr.webp" class="img2" alt="">
+        <img src="Screenshot (309).png" class="hicet" alt="">
+        <h3 class="title">An Autonomous Institution Recognized By </h3>
+        <h3 class="title1">Government of India </h3>
+        <h1 class="m">ANNUAL STATEMENT OF MARKS</h1>
+
+        <table>
+            <tr>
+                <td colspan="2">
+                    <div class="c1">Name of the Student:</div>
+                    <div class="c1">Divithkumar A</div>
+                </td>
+                <td colspan="2">
+                    <div class="c2">Department: </div>
+                    <div class="c2">Computer Science</div>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="c1">Register Number: <div class="c2">720721104022</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="c1">Enrollment Number: <div class="c2">720721104022</div>
+                </td>
+                <td colspan="2">
+                    <div class="c1">Training centre</div>
+                    <div class="c2">Hindusthan college</div>
+                </td>
+
+            </tr>
+        </table>
+
+        <table class="table2">
+
+            <tr>
+                <th class="heading">Subject Code</th>
+                <th class="heading">Subject Name</th>
+                <th class="heading">Max Marks</th>
+                <th class="heading" colspan="3">Marks Obtained in Figures</th>
+                <th class="heading">Total in Words</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th class="heading">Theory</th>
+                <th class="heading">Practical</th>
+                <th class="heading">Total</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>DFSO12-101</td>
+                <td>Fire Science and Technology</td>
+                <td>100</td>
+                <td><input type="number" class="input1" oninput="total(this)" max="100" min="0"></td>
+                <td><input type="number" class="input2" oninput="total(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-102</td>
+                <td>Fire Protection and Survey</td>
+                <td>100</td>
+                <td><input type="number" class="input1" oninput="total(this)" max="100" min="0"></td>
+                <td><input type="number" class="input2" oninput="total(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-103</td>
+                <td>Fire Prevention and Technology</td>
+                <td>100</td>
+                <td><input type="number" class="input1" oninput="total(this)" max="100" min="0"></td>
+                <td><input type="number" class="input2" oninput="total(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-104</td>
+                <td>Fire Extinction and Control</td>
+                <td>100</td>
+                <td><input type="number" class="input1" oninput="total(this)" max="100" min="0"></td>
+                <td><input type="number" class="input2" oninput="total(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+                <td>DFSO12-105</td>
+                <td>Industrial Safety and Management</td>
+                <td>100</td>
+                <td><input type="number" class="input1" oninput="total(this)" max="100" min="0"></td>
+                <td><input type="number" class="input2" oninput="total(this)" max="100" min="0"></td>
+                <td><span class="total">0</span></td>
+                <td><span class="total-words">Zero</span></td>
+            </tr>
+            <tr>
+            <tr>
+                <td colspan="7">
+                    <div class="totalmarks">Total Marks: <span class="totalmarks">0</span></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2">Month and Year of Examination</td>
+                <td colspan="2">No. of Subjects</td>
+                <td>Result</td>
+                <td>Percentage</td>
+                <td colspan="3">Grade</td>
+
+            </tr>
+            <tr>
+                <td colspan="2">August 2024</td>
+                <td colspan="2">T5+T3=8</td>
+                <td>PASS</td>
+                <td class="percentage">0</td>
+                <td colspan="3">DISTINCTION</td>
+            </tr>
+
+        </table>
+        <div class="date">Date:</div>
+        <div class="date">Place:</div>
+        <p class="r1">Signature of Deputy <br> Controller of Examination </p>
+
+    </div>
+    <script>
+        let totalMarks = 0;
+
+        function total(input) {
+            let sum = input.parentNode.parentNode;
+            let input1 = sum.querySelector('.input1').value;
+            let input2 = sum.querySelector('.input2').value;
+            let total = parseInt(input1) + parseInt(input2);
+            sum.querySelector('.total').innerText = total;
+            sum.querySelector('.total-words').innerText = Words(total);
+            
+    
+            let inputsfield = true;
+            let inputs = document.querySelectorAll('.input1, .input2');
+            inputs.forEach(function(input) {
+              if (input.value === '') {
+                inputsfield = false;
+              }
+            });
+            
+            if (inputsfield) {
+              totalMarks = 0;
+              inputs.forEach(function(input) {
+                totalMarks += parseInt(input.value);
+              });
+              document.querySelector('.totalmarks').innerText = totalMarks;
+              calculatePercentage();
+            }
+          }
+            
+          function calculatePercentage() {
+            let percentage = (totalMarks / 500) * 100;
+            document.querySelector('.percentage').innerText = percentage.toFixed(2);
+          }
+          
+        let input1 = sum.querySelector('.input1').value;
+        let input2 = sum.querySelector('.input2').value;
+        if (!isNaN(input1) && !isNaN(input2)) {
+            let total = parseInt(input1) + parseInt(input2);
+        }
+
+        function Words(num) {
+            let ones = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+            let teens = ['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
+            let tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety', 'Hundred'];
+            if (num < 10) {
+                return ones[num];
+            } else if (num < 20) {
+                return teens[num - 10];
+            } else {
+                return tens[Math.floor(num / 10)] + (num % 10 != 0 ? ' ' + ones[num % 10] : '');
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
